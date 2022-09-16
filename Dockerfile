@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-LABEL maintainer="Sahil Malik <sahilmalik@winsmarts.com>"
+LABEL maintainer="James Winegard <james.winegard@gmail.com>"
 
 RUN apt-get update && \
     apt-get install -y sudo curl git-core gnupg linuxbrew-wrapper locales nodejs zsh wget nano nodejs npm fonts-powerline && \
