@@ -2,7 +2,7 @@ FROM ubuntu:latest
 LABEL maintainer="James Winegard <james.winegard@gmail.com>"
 
 RUN apt-get update && \
-    apt-get install -y sudo curl git-core gnupg locales nodejs zsh wget nano nodejs npm fonts-powerline && \
+    apt-get install -y sudo curl git-core gnupg locales zsh wget nano fonts-powerline && \
     locale-gen en_US.UTF-8 && \
     adduser --quiet --disabled-password --shell /bin/zsh --home /home/devuser --gecos "User" devuser && \
     echo "devuser:p@ssword1" | chpasswd &&  usermod -aG sudo devuser
